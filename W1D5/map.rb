@@ -13,4 +13,14 @@ class Map
 
   def delete(key)
   end
+
+  def show
+    deep_dup(@array)
+  end
+
+  private
+
+  def deep_dup(arr)
+    arr.map { |ele| ele.is_a?(Array) ? deep_dup(arr) : ele }
+  end
 end
