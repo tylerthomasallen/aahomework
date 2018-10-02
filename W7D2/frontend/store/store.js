@@ -17,4 +17,9 @@ const addLoggingToDispatch = store => next => action => {
   console.log(store.getState());
 };
 
+const sillyMiddleware = store => next => action => {
+  console.log('Silly');
+  next(action);
+};
+
 export default configureStore;
