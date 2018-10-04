@@ -8,12 +8,14 @@ class Red extends React.Component {
     return(
       <div>
         <h2 className="red"></h2>
+        <Route path="red/orange" component={Orange} />
+        <Route path="red/yellow" component={Yellow} />
         {/* Links here */}
 
         {/* Routes here */}
       </div>
     );
   }
-};
+}
 
 export default Red;
