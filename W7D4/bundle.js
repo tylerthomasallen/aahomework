@@ -137,12 +137,12 @@ var Blue = function (_React$Component) {
         null,
         _react2.default.createElement('h2', { className: 'blue' }),
         _react2.default.createElement(
-          _reactRouterDom.Link,
-          { to: '/blue' },
+          _reactRouterDom.NavLink,
+          { exact: true, to: '/blue' },
           'Blue only'
         ),
         _react2.default.createElement(
-          _reactRouterDom.Link,
+          _reactRouterDom.NavLink,
           { to: '/blue/indigo' },
           'Add indigo'
         ),
@@ -321,22 +321,22 @@ var Rainbow = function (_React$Component) {
           'Rainbow Router!'
         ),
         _react2.default.createElement(
-          _reactRouterDom.Link,
+          _reactRouterDom.NavLink,
           { to: '/red' },
           'Red'
         ),
         _react2.default.createElement(
-          _reactRouterDom.Link,
+          _reactRouterDom.NavLink,
           { to: '/green' },
           'Green'
         ),
         _react2.default.createElement(
-          _reactRouterDom.Link,
+          _reactRouterDom.NavLink,
           { to: '/blue' },
           'Blue'
         ),
         _react2.default.createElement(
-          _reactRouterDom.Link,
+          _reactRouterDom.NavLink,
           { to: '/Violet' },
           'Violet'
         ),
@@ -416,19 +416,19 @@ var Red = function (_React$Component) {
         _react2.default.createElement(_reactRouterDom.Route, { path: 'red/orange', component: _orange2.default }),
         _react2.default.createElement(_reactRouterDom.Route, { path: 'red/yellow', component: _yellow2.default }),
         _react2.default.createElement(
-          _reactRouterDom.Link,
-          { to: '/red' },
+          _reactRouterDom.NavLink,
+          { exact: true, to: '/red' },
           'Red only'
         ),
         _react2.default.createElement(
-          _reactRouterDom.Link,
+          _reactRouterDom.NavLink,
           { to: '/red/orange' },
           'Add Orange'
         ),
         _react2.default.createElement(
-          _reactRouterDom.Link,
+          _reactRouterDom.NavLink,
           { to: '/red/yellow' },
-          'Add =Yellow'
+          'Add Yellow'
         )
       );
     }
